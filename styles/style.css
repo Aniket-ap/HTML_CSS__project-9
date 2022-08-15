@@ -76,7 +76,7 @@ body{
     color: #111;
     font-size: 20px;
     font-weight: 700;
-    margin-top: auto;
+    margin-top: 40px;
     /* position: absolute; */
     /* bottom: 0; */
     /* margin-bottom: 30px; */
@@ -84,7 +84,7 @@ body{
 
 .left__bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .left__bottom p{
@@ -394,4 +394,155 @@ body{
     padding: 10px;
     cursor: pointer;
     font-size: 25px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+    .header{
+        height: auto;
+    }
+
+    .header__nav{
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+
+    .header__navs ul{
+        flex-wrap: wrap;
+    }
+
+    .header__navs ul li {
+        margin: 0 15px;
+        font-size: 15px;
+    }
+
+    .hero__left .left__heading h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .left__bottom{
+        flex-wrap: wrap;
+    }
+
+    .left__bottom p{
+        font-size: 15px;
+    }
+
+    .catgory__card{
+        margin-bottom: 20px;
+    }
+
+    .header__hero{
+        flex-direction: column;
+    }
+
+    .article__heading h1{
+        font-size: 20px;
+    }
+
+    .banner{
+        display: none;
+    }
+
+    .article{
+        padding: 0px;
+    }
+
+    .article__cards{
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .download{
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .right .input button{
+        padding: 5px 10px;
+    }
+
+    .right{
+        padding: 0px;
+    }
+
+    .links ul{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .header{
+        height: auto;
+    }
+
+    .header__nav{
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+
+    .header__navs ul li {
+        margin: 0 10px;
+        font-size: 15px;
+    }
+
+    .left__bottom p{
+        font-size: 15px;
+    }
+
+    .header__hero{
+        flex-direction: column;
+    }
+
+    .article{
+        padding: 30px;
+    }
+
+    .article__cards{
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .download{
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .right .input button{
+        padding: 5px 10px;
+    }
+
+    .links ul{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .header{
+        height: auto;
+    }
+
+    .header__hero{
+        flex-direction: column;
+    }
+
+    .download{
+        flex-direction: column;
+    }
+
+    .links ul{
+        flex-wrap: wrap;
+    }
 }
